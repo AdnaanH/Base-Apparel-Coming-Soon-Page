@@ -4,30 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
   
   <title>Frontend Mentor | Base Apparel coming soon page</title>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
+  <main>
+    <div class="container">
+      <!--LEFT SECTION START-->
+      <div class="left-section">
+        <div class="logo">
+          <img src="./logo.svg" alt="logo">
+        </div>
+        <div class="mobile-img">
+          <img src="./hero-mobile.jpg" alt="hero">
+        </div>
+        <div class="content">
+          <h1><span>We're</span><br> coming<br> soon</h1>
+          <p>Hello fellow shoppers! We're currently building our new fashion store. 
+            Add your email below to stay up-to-date with announcements and our launch deals.
+          </p>
+          <form id="form">
+            <div class="inPut">
+              <input id="email" type="email" placeholder="Email Address">
+              <img src="./icon-error.svg" alt="error" class="error-icon hidden">
+              <button onclick="ValidateEmail()"><img src="./icon-arrow.svg" alt="arrow"></button>
+            </div>
+            <small class="error-msg hidden">Please provide a valid email.</small>
+          </form>
+        </div>
+      </div>
+      <!--LEFT SECTION END-->
+      <!--RIGHT SECTION START-->
+      <div class="right-section">
 
-  We're coming soon
-
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
-
-  Email Address
+      </div>
+      <!--RIGHT SECTION END-->
+    </div>
+  </main>
   
   <footer>
-    <p class="attribution">
+    <p>
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="www.upandstarttechnologies.com">Adnan Hamisi</a>.
     </p>
   </footer>
+  <script src="./script.js"></script>
 </body>
 </html>
